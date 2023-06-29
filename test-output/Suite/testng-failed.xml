@@ -3,6 +3,20 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="TestCases.VrifyRegester">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="quitBrowser"/>
+          <include name="Regester"/>
+        </methods>
+      </class> <!-- TestCases.VrifyRegester -->
+      <class name="TestCases.VerifyLogIn">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="Login"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- TestCases.VerifyLogIn -->
       <class name="TestCases.veifyAccServices">
         <methods>
           <include name="LaunchBrowser"/>
